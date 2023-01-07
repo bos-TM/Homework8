@@ -40,7 +40,7 @@ public class Animal {
 
     @Override
     public String toString() {
-        return "Ім'я: " + name + ", вік: " + age + ", хвіст: " + tail;
+        return "Ім'я: " + name + ", вік: " + age + ", хвіст: " + ((tail) ? "так" : "ні");
     }
 
     @Override
@@ -67,8 +67,8 @@ public class Animal {
     }
 
     public static void main(String[] args) {
-        Animal cat = new Animal("Vasia", 7, true);
-        Animal dog = new Animal("Sharik", 5, false);
+        Animal cat = new Animal("Вася", 7, true);
+        Animal dog = new Animal("Шарік", 5, false);
         System.out.println(cat.equals(dog));
 
         System.out.println(cat);
